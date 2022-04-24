@@ -3,13 +3,19 @@ const inquirer = require("inquirer")
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const generateHTML = require("./util/generateHtml");
+const generateHtml = require("./util/generateHtml");
 
-const team = [];
+const teamArray = [];
 // finish -> HTML generated
 // validate user input to proper format
 
-console.log('Welcome! PLease tell us about your team.')
-newManager();
+function start () {
+    console.log('Welcome! Please tell us about your team.')
+    newManager();
+}
+
+start()
 
 function menu() {
     inquirer.prompt([
@@ -31,7 +37,14 @@ function menu() {
                 break;
             default: 
                 // console.log(`Thanks for building!`)
-                console.log(team)
+                console.log(teamArray);
+                console.log(teamArray[0].constructor.name.toLowerCase());
+                // GENERATE HTML PART TBD
+                // forEach(member in teamArray) {
+                //     let memberrole = member.constructor.name.toLowerCase();
+
+                // }
+                // generateTeam(teamArray);
                 break;
         }
     })
@@ -63,8 +76,8 @@ function newManager() {
     ]).then(ans => {
         const manager = new Manager(ans.name, ans.id, ans.email, ans.office);
         // console.log(manager);
-        team.push(manager);
-        // console.log(team);
+        teamArray.push(manager);
+        // console.log(teamArray);
         menu();
     })
 }
@@ -95,8 +108,8 @@ function newEngineer() {
     ]).then(ans => {
         const engineer = new Engineer(ans.name, ans.id, ans.email, ans.github);
         // console.log(manager);
-        team.push(engineer);
-        // console.log(team);
+        teamArray.push(engineer);
+        // console.log(teamArray);
         menu();
     })
 }
@@ -127,8 +140,8 @@ function newIntern() {
     ]).then(ans => {
         const intern = new Intern(ans.name, ans.id, ans.email, ans.school);
         // console.log(manager);
-        team.push(intern);
-        // console.log(team);
+        teamArray.push(intern);
+        // console.log(teamArray);
         menu();
     })
 }
