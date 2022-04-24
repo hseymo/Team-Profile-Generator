@@ -1,14 +1,12 @@
-const inquirer = require("inquirer")
+const inquirer = require("inquirer");
 // const Employee = require("./lib/Employee");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const generateHTML = require("./util/generateHtml");
-const generateHtml = require("./util/generateHtml");
+const team = require("./util/generateHtml");
+const fs = require('fs');
 
 const teamArray = [];
-// finish -> HTML generated
-// validate user input to proper format
 
 function start () {
     console.log('Welcome! Please tell us about your team.')
@@ -28,23 +26,13 @@ function menu() {
     ]).then(answers => {
         switch (answers.next) {
             case 'Add an Engingeer': 
-                // console.log(`I chose ${answers.next}`);
                 newEngineer();
                 break;
             case 'Add an Intern':
-                // console.log(`I chose ${answers.next}`);
                 newIntern();
                 break;
             default: 
-                // console.log(`Thanks for building!`)
-                console.log(teamArray);
-                console.log(teamArray[0].constructor.name.toLowerCase());
-                // GENERATE HTML PART TBD
-                // forEach(member in teamArray) {
-                //     let memberrole = member.constructor.name.toLowerCase();
-
-                // }
-                // generateTeam(teamArray);
+                writeHtmlFile();
                 break;
         }
     })
@@ -75,9 +63,7 @@ function newManager() {
         }
     ]).then(ans => {
         const manager = new Manager(ans.name, ans.id, ans.email, ans.office);
-        // console.log(manager);
         teamArray.push(manager);
-        // console.log(teamArray);
         menu();
     })
 }
@@ -107,9 +93,7 @@ function newEngineer() {
         }
     ]).then(ans => {
         const engineer = new Engineer(ans.name, ans.id, ans.email, ans.github);
-        // console.log(manager);
         teamArray.push(engineer);
-        // console.log(teamArray);
         menu();
     })
 }
@@ -139,9 +123,14 @@ function newIntern() {
         }
     ]).then(ans => {
         const intern = new Intern(ans.name, ans.id, ans.email, ans.school);
-        // console.log(manager);
         teamArray.push(intern);
-        // console.log(teamArray);
         menu();
     })
+}
+
+function writeHtmlFile() {
+    console.log(teamArray);
+    team(teamArray);
+    fs.writeFile('index.html', team(teamArray), (err) => 
+        err ? console.log(err) : console.log('Success'))
 }
