@@ -4,14 +4,17 @@
 
 ## **Table of Contents**
 ---
-- [License](#license)
-- [Installation](#installation)
-- [Packages](#packages)
-- [Description](#description)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
+- [**Team-Profile-Generator**](#team-profile-generator)
+  - [## **Table of Contents**](#-table-of-contents)
+  - [## **License**](#-license)
+  - [## **Installation**](#-installation)
+  - [## **Packages**](#-packages)
+  - [## **Description**](#-description)
+  - [## **Usage**](#-usage)
+  - [### **Screenshots**](#-screenshots)
+  - [## **Contributing**](#-contributing)
+  - [## **Tests**](#-tests)
+  - [## **Questions?**](#-questions)
 
 <br>
 
@@ -69,6 +72,8 @@ To use this project, open the "index.js" file in your integrated terminal. Run t
 --- 
 ![screenshot](ADD URL HERE)
 <br>
+![testingsuite](./assets/screenshots/Tests.png)
+<br>
 
 <br>
 
@@ -80,7 +85,7 @@ This project was completed by myself, Haley, Seymour, with starter code provied 
 
 ## **Tests** 
 ---
-Tests are included in a folder titled "test". Open the library files in your integrated terminal and run the command "npm test" to run 17 tests on 4 test suites. 
+Testing utilizes 'Jest' and tests are included in a folder titled "test". Open the library files in your integrated terminal and run the command "npm test" (after installing) to run 17 tests on 4 test suites. 
 
 <br>
 

@@ -17,12 +17,13 @@ body {
 
 .card-header {
     background: darkturquoise;
-    color: darkorange;
+    color: navy;
     font-weight: bolder;
 }
 
 .card {
     background: turquoise;
+    color: navy;
 }
 
 .list-group-item {

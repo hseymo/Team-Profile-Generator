@@ -45,34 +45,46 @@ function newManager() {
             type: "input",
             name: "name",
             message: "What is the team manager's name?",
-            validate: (answer) => {
-                if ( answer !== ''){
+            validate: (ans) => {
+                if (ans.trim() !== ''){
                     return true;
                 }
-                return 'Please return something/ at least a letter'
+                return 'Please enter a name'
             }
         },
         {
             type: "input",
             name: "id",
-            message: "What is the manager's employee ID?"
+            message: "What is the manager's employee ID?",
+            validate: (ans) => {
+                if (ans.trim() !== ''){
+                    return true;
+                }
+                return 'Please enter an ID'
+            }
         },
         {
             type: "input",
             name: "email",
             message: "What is the manager's email address?",
             validate: (answer) => {
-                const pass = answer.match(/\S+@\S+\.\S+/);
-                if ( pass){
+                const pass = answer.match(/^\S+@\S+\.\S+$/);
+                if (pass){
                     return true;
                 }
-                return 'Please enter an email without spaces?'
+                return 'Please enter a valid email address'
             }
         },
         {
             type: "input",
             name: "office",
-            message: "What is the manager's office number?"
+            message: "What is the manager's office number?",
+            validate: (ans) => {
+                if (ans.trim() !== ''){
+                    return true;
+                }
+                return 'Please enter an office number'
+            }
         }
     ]).then(ans => {
         const manager = new Manager(ans.name, ans.id, ans.email, ans.office);
@@ -87,22 +99,47 @@ function newEngineer() {
         {
             type: "input",
             name: "name",
-            message: "What is the engineer's name?"
+            message: "What is the engineer's name?",
+            validate: (ans) => {
+                if (ans.trim() !== ''){
+                    return true;
+                }
+                return 'Please enter a name'
+            }
         },
         {
             type: "input",
             name: "id",
-            message: "What is the engineer's employee ID?"
+            message: "What is the engineer's employee ID?",
+            validate: (ans) => {
+                if (ans.trim() !== ''){
+                    return true;
+                }
+                return 'Please enter an ID'
+            }
         },
         {
             type: "input",
             name: "email",
-            message: "What is the engineer's email address?"
+            message: "What is the engineer's email address?",
+            validate: (answer) => {
+                const pass = answer.match(/^\S+@\S+\.\S+$/);
+                if (pass){
+                    return true;
+                }
+                return 'Please enter a valid email address'
+            }
         },
         {
             type: "input",
             name: "github",
-            message: "What is the engineer's github?"
+            message: "What is the engineer's github username?",
+            validate: (ans) => {
+                if (ans.trim() !== ''){
+                    return true;
+                }
+                return 'Please enter an github username'
+            }
         }
     ]).then(ans => {
         const engineer = new Engineer(ans.name, ans.id, ans.email, ans.github);
@@ -117,22 +154,47 @@ function newIntern() {
         {
             type: "input",
             name: "name",
-            message: "What is the intern's name?"
+            message: "What is the intern's name?",
+            validate: (ans) => {
+                if (ans.trim() !== ''){
+                    return true;
+                }
+                return 'Please enter a name'
+            }
         },
         {
             type: "input",
             name: "id",
-            message: "What is the intern's employee ID?"
+            message: "What is the intern's employee ID?",
+            validate: (ans) => {
+                if (ans.trim() !== ''){
+                    return true;
+                }
+                return 'Please enter an ID'
+            }
         },
         {
             type: "input",
             name: "email",
-            message: "What is the intern's email address?"
+            message: "What is the intern's email address?",
+            validate: (answer) => {
+                const pass = answer.match(/^\S+@\S+\.\S+$/);
+                if (pass){
+                    return true;
+                }
+                return 'Please enter a valid email address'
+            }
         },
         {
             type: "input",
             name: "school",
-            message: "What is the intern's school?"
+            message: "What is the intern's school?",
+            validate: (ans) => {
+                if (ans.trim() !== ''){
+                    return true;
+                }
+                return 'Please enter a school'
+            }
         }
     ]).then(ans => {
         const intern = new Intern(ans.name, ans.id, ans.email, ans.school);
