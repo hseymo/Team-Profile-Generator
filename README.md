@@ -67,7 +67,8 @@ This project is not deployed. <br><br>
 
 ## **Usage** 
 ---
-This program is a command-line application with Node.js. To use this project, open the "index.js" file in your integrated terminal. Run the command "node index.js" and a series of prompts will begin. First you will be prompted for the manager's information, and then you can elect to add Engingeers and Interns. Once you have entered a team member, you will be redirected back to the menu, to repeat adding team members (no max) until your team is complete. There are validation checks to ensure content is input, and Regex checks to ensure email formatting is valid. Once you are finished, select "Finish" from the menu, and an index.html file will be generated. Open this page in your browser to view the final product. There are live links to open email addresses via 'mailto', and to open github profiles. <br>
+This program is a command-line application with Node.js. To use this project, open the "index.js" file in your integrated terminal. Run the command "node index.js" and a series of prompts will begin. First you will be prompted for the manager's information, and then you can elect to add Engingeers and Interns. Once you have entered a team member, you will be redirected back to the menu, to repeat adding team members (no max) until your team is complete. There are validation checks to ensure content is input, and Regex checks to ensure email formatting is valid. Once you are finished, select "Finish" from the menu, and an html file titled 'index.html' will be generated. Open this page in your browser to view the final product. There are live links to open email addresses via 'mailto', and to open github profiles. <br><br>
+Please check out this [video](https://drive.google.com/file/d/1kdn9Pg2lKCgrr9-BRC3Lv6JM6jX4yP3J/view) to view a demonstation of this program.
 
 ### **Screenshots**
 --- 
