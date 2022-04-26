@@ -44,7 +44,13 @@ function newManager() {
         {
             type: "input",
             name: "name",
-            message: "What is the team manager's name?"
+            message: "What is the team manager's name?",
+            validate: (answer) => {
+                if ( answer !== ''){
+                    return true;
+                }
+                return 'Please return something/ at least a letter'
+            }
         },
         {
             type: "input",
@@ -54,7 +60,14 @@ function newManager() {
         {
             type: "input",
             name: "email",
-            message: "What is the manager's email address?"
+            message: "What is the manager's email address?",
+            validate: (answer) => {
+                const pass = answer.match(/\S+@\S+\.\S+/);
+                if ( pass){
+                    return true;
+                }
+                return 'Please enter an email without spaces?'
+            }
         },
         {
             type: "input",

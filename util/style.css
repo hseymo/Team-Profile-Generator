@@ -1,0 +1,30 @@
+:root {
+    navy: #022449;
+    orange: #f27d92;
+    dark-teal: #55bdca;
+    teal: #96ffff;
+    light: #c8eff9;
+}
+
+body {
+    background: rgb(175, 231, 232);
+}
+
+.jumbotron {
+    background: teal;
+    color: white;
+}
+
+.card-header {
+    background: darkturquoise;
+    color: darkorange;
+    font-weight: bolder;
+}
+
+.card {
+    background: turquoise;
+}
+
+.list-group-item {
+    background: rgb(175, 231, 232);
+}
