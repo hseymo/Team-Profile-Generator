@@ -70,8 +70,13 @@ To use this project, open the "index.js" file in your integrated terminal. Run t
 
 ### **Screenshots**
 --- 
-![screenshot](ADD URL HERE)
+Completed Prompts with Validation Message <br>
+![prompts](./assets/screenshots/PromptswithValidationExample.png)
 <br>
+Prompt Menu <br>
+![promptmenu](./assets/screenshots/PromptMenu.png)
+<br>
+Testing Suite Passing Results <br>
 ![testingsuite](./assets/screenshots/Tests.png)
 <br>
 
@@ -79,7 +84,7 @@ To use this project, open the "index.js" file in your integrated terminal. Run t
 
 ## **Contributing** 
 ---
-This project was completed by myself, Haley, Seymour, with starter code provied from the University of Washington Web Development Bootcamp. If you would like to contribute, please do and let me know if you have any questions.
+This project was completed by myself, Haley Seymour, with starter code provied from the University of Washington Web Development Bootcamp. If you would like to contribute, please do and let me know if you have any questions.
 
 <br>
 

@@ -87,7 +87,8 @@ function newManager() {
             }
         }
     ]).then(ans => {
-        const manager = new Manager(ans.name, ans.id, ans.email, ans.office);
+        managerName = ans.name[0].toUpperCase() + ans.name.slice(1);
+        const manager = new Manager(managerName, ans.id, ans.email, ans.office);
         teamArray.push(manager);
         menu();
     })
@@ -142,7 +143,8 @@ function newEngineer() {
             }
         }
     ]).then(ans => {
-        const engineer = new Engineer(ans.name, ans.id, ans.email, ans.github);
+        engineerName = ans.name[0].toUpperCase() + ans.name.slice(1);
+        const engineer = new Engineer(engineerName, ans.id, ans.email, ans.github);
         teamArray.push(engineer);
         menu();
     })
@@ -197,7 +199,9 @@ function newIntern() {
             }
         }
     ]).then(ans => {
-        const intern = new Intern(ans.name, ans.id, ans.email, ans.school);
+        internName = ans.name[0].toUpperCase() + ans.name.slice(1);
+        internSchool = ans.school[0].toUpperCase() + ans.school.slice(1);
+        const intern = new Intern(internName, ans.id, ans.email, internSchool);
         teamArray.push(intern);
         menu();
     })
