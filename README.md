@@ -4,17 +4,15 @@
 
 ## **Table of Contents**
 ---
-- [**Team-Profile-Generator**](#team-profile-generator)
-  - [## **Table of Contents**](#-table-of-contents)
-  - [## **License**](#-license)
-  - [## **Installation**](#-installation)
-  - [## **Packages**](#-packages)
-  - [## **Description**](#-description)
-  - [## **Usage**](#-usage)
-  - [### **Screenshots**](#-screenshots)
-  - [## **Contributing**](#-contributing)
-  - [## **Tests**](#-tests)
-  - [## **Questions?**](#-questions)
+  - [License](#license)
+  - [Installation](#installation)
+  - [Packages](#packages)
+  - [Description](#description)
+  - [Usage](#usage)
+  - [Screenshots](#screenshots)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions?](#questions)
 
 <br>
 
