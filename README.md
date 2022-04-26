@@ -55,21 +55,25 @@ To install this project, start by forking this repository on GitHub. Clone this 
 
 ## **Packages** 
 ---
-Inquirer, Jest
+Node.js: Inquirer, Jest
 
 <br>
 
 ## **Description**
 ---
-The motivation for this project is to create a webpage to easily organize employee information for your work team. It aims to assist managers in keeping track of the engineers and interns under them, as well as contact information like email, content porfolios like Github, and school association for interns. The generated page is easy to read and contains links to the necessary information.  <br><br>
+The motivation for this project is to create a webpage to easily organize employee information for your work team. It aims to assist managers in keeping track of the engineers and interns under them, as well as contact information like email, content porfolios like Github, and school association for interns. The generated page is easy to read and contains links to the necessary information. It solves the need to keep team information organized and easily accessible. Once created, the manager may share the page with the team so all parties have contact information for their colleagues. <br><br>
+
 This project is not deployed. <br><br>
 
 ## **Usage** 
 ---
-To use this project, open the "index.js" file in your integrated terminal. Run the command "node index.js" and a series of prompts will begin. First you will be prompted for the manager's information, and then you can elect to add Engingeers and Interns (no max). Once you are finished, select "Finish" from the menu, and an index.html file will be generated. Open this page in your browser to view the final product.<br>
+This program is a command-line application with Node.js. To use this project, open the "index.js" file in your integrated terminal. Run the command "node index.js" and a series of prompts will begin. First you will be prompted for the manager's information, and then you can elect to add Engingeers and Interns. Once you have entered a team member, you will be redirected back to the menu, to repeat adding team members (no max) until your team is complete. There are validation checks to ensure content is input, and Regex checks to ensure email formatting is valid. Once you are finished, select "Finish" from the menu, and an index.html file will be generated. Open this page in your browser to view the final product. There are live links to open email addresses via 'mailto', and to open github profiles. <br>
 
 ### **Screenshots**
 --- 
+Generated Webpage <br>
+![webpageexample](./assets/screenshots/ExampleWebpage.png)
+<br>
 Completed Prompts with Validation Message <br>
 ![prompts](./assets/screenshots/PromptswithValidationExample.png)
 <br>
