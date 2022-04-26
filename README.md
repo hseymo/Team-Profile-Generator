@@ -18,7 +18,7 @@
 
 ## **License** 
 ---
-[MIT License](../LICENSE) <br>
+[MIT License](./LICENSE) <br>
 
 MIT License
 
