@@ -47,7 +47,7 @@ SOFTWARE.
 
 ## **Installation** 
 ---
-To install this project, start by forking this repository on GitHub. Clone this project to your machine by using the "git clone" + URL comamnd. Open the project with your favorite text editor, like VS Code. This project includes a package.json file that specifies dependencies for the project, so be sure to run "npm install". 
+To install this project, start by forking this repository on GitHub. Clone this project to your machine by using the "git clone" + URL command. Open the project with your favorite text editor, like VS Code. This project includes a package.json file that specifies dependencies for the project, so be sure to run "npm install". Specifically, this project relies on the Inquirer package for the commandline interactions as well as Jest as a development dependency for testing. 
 
 <br>
 
@@ -59,7 +59,7 @@ Node.js: Inquirer, Jest
 
 ## **Description**
 ---
-The motivation for this project is to create a webpage to easily organize employee information for your work team. It aims to assist managers in keeping track of the engineers and interns under them, as well as contact information like email, content porfolios like Github, and school association for interns. The generated page is easy to read and contains links to the necessary information. It solves the need to keep team information organized and easily accessible. Once created, the manager may share the page with the team so all parties have contact information for their colleagues. <br><br>
+The motivation for this project is to create a webpage using Node.js to easily organize employee information for your work team. It aims to assist managers in keeping track of the engineers and interns under them, as well as contact information like email, content porfolios like Github, and school association for interns. The generated page is easy to read and contains links to the necessary information. It solves the need to keep team information organized and easily accessible. Once created, the manager may share the page with the team so all parties have contact information for their colleagues. <br><br>
 
 This project is not deployed. <br><br>
 

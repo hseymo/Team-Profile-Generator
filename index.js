@@ -21,11 +21,11 @@ function menu() {
             type: "list",
             name: "next",
             message: "What do you want to do next?",
-            choices: ['Add an Engingeer', 'Add an Intern', 'Finish']
+            choices: ['Add an Engineer', 'Add an Intern', 'Finish']
         }
     ]).then(answers => {
         switch (answers.next) {
-            case 'Add an Engingeer': 
+            case 'Add an Engineer': 
                 newEngineer();
                 break;
             case 'Add an Intern':
@@ -39,7 +39,7 @@ function menu() {
 }
 
 function newManager() {
-    console.log('Please provide some information for the manger.')
+    console.log('Please provide some information for the manager.')
     inquirer.prompt([
         {
             type: "input",
