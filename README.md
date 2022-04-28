@@ -61,8 +61,6 @@ General Technologies:
 - CSS
 - Javascript
 - Node.js
-- Heroku
-- Git
 
 NPM Packages
 - inquirer 
